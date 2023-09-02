@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/heroesListFragment">
+
+    <fragment
+        android:id="@+id/heroesListFragment"
+        android:name="com.example.capstone.presentation.view.fragments.HeroesListFragment"
+        android:label="Dota Heroes Stats"
+        tools:layout="@layout/fragment_heroes_list">
+        <action
+            android:id="@+id/action_open_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_open_aboutAuthorFragment"
+            app:destination="@id/aboutAuthorFragment" />
+        <action
+            android:id="@+id/action_open_heroDetailsFragment"
+            app:destination="@id/heroDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.capstone.presentation.view.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/aboutAuthorFragment"
+        android:name="com.example.capstone.presentation.view.fragments.AboutAuthorFragment"
+        android:label="About Author"
+        tools:layout="@layout/fragment_about_author" />
+    <fragment
+        android:id="@+id/heroDetailsFragment"
+        android:name="com.example.capstone.presentation.view.fragments.HeroDetailsFragment"
+        android:label="Hero Details"
+        tools:layout="@layout/fragment_hero_details">
+        <argument
+            android:name="heroId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

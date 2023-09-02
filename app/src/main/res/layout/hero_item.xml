@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/hero_name_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:paddingBottom="15dp"-->
+<!--        tools:text="Phantom Assassin"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/hero_win_rate_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:text="WinRate" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/hero_base_move_speed_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/hero_win_rate_label"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:text="Speed" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/hero_base_armor_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/hero_base_move_speed_label"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:text="Armor" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/hero_health_regen_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/hero_base_armor_label"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:text="Regen" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/hero_attack_type_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/hero_health_regen_label"-->
+<!--        app:layout_constraintTop_toTopOf="@id/hero_name_label"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/hero_name_label"-->
+<!--        tools:text="Attack\n Type" />-->
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/hero_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Keeper of the Light" />
+
+    <TextView
+        android:id="@+id/hero_win_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="100%" />
+
+    <TextView
+        android:id="@+id/hero_base_move_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="310ms" />
+    
+    <TextView
+        android:id="@+id/hero_base_armor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="15" />
+
+    <TextView
+        android:id="@+id/hero_health_regen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="+5" />
+
+    <TextView
+        android:id="@+id/hero_attack_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ranged" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

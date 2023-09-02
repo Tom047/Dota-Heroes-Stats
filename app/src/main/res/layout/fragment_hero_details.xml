@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.fragments.HeroDetailsFragment">
+
+    <ImageView
+        android:id="@+id/hero_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/hero_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/hero_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Hero Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_image" />
+
+    <TextView
+        android:id="@+id/hero_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hero_name_label"
+        app:layout_constraintTop_toTopOf="@id/hero_name_label"
+        tools:text="Anti-Mage" />
+
+    <TextView
+        android:id="@+id/hero_attack_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Attack Type: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_name_label" />
+
+    <TextView
+        android:id="@+id/hero_attack_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hero_attack_type_label"
+        app:layout_constraintTop_toTopOf="@id/hero_attack_type_label"
+        tools:text="Melee" />
+
+    <TextView
+        android:id="@+id/hero_roles_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Roles: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_attack_type_label" />
+
+    <TextView
+        android:id="@+id/hero_roles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hero_roles_label"
+        app:layout_constraintTop_toTopOf="@id/hero_roles_label"
+        tools:text="Carry,Escape,Nuker" />
+
+    <TextView
+        android:id="@+id/hero_popular_items_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Popular Items: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_roles_label" />
+
+
+    <TextView
+        android:id="@+id/start_game_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Start Game: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_popular_items_label" />
+
+    <TextView
+        android:id="@+id/start_game_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/start_game_label"
+        app:layout_constraintTop_toTopOf="@id/start_game_label"
+        tools:text="Tango, Healing Salve, Iron Branch, Iron Branch, Iron Branch, Iron Branch" />
+
+    <TextView
+        android:id="@+id/early_game_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Early Game: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_game_items" />
+
+    <TextView
+        android:id="@+id/early_game_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_game_items"
+        app:layout_constraintTop_toTopOf="@id/early_game_label"
+        tools:text="Tango, Healing Salve, Iron Branch, Iron Branch, Iron Branch, Iron Branch" />
+
+    <TextView
+        android:id="@+id/mid_game_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Mid Game: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/early_game_items" />
+
+    <TextView
+        android:id="@+id/mid_game_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_game_items"
+        app:layout_constraintTop_toTopOf="@id/mid_game_label"
+        tools:text="Tango, Healing Salve, Iron Branch, Iron Branch, Iron Branch, Iron Branch" />
+
+    <TextView
+        android:id="@+id/late_game_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Late Game: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mid_game_items" />
+
+    <TextView
+        android:id="@+id/late_game_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_game_items"
+        app:layout_constraintTop_toTopOf="@id/late_game_label"
+        tools:text="Tango, Healing Salve, Iron Branch, Iron Branch, Iron Branch, Iron Branch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
